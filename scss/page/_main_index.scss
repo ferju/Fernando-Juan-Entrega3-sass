@@ -1,0 +1,59 @@
+.encabezado {
+    .encabezadoDestacado {
+
+        @include flexf (flex, center, center, space-around);
+        background-color: $rosaf;
+        color: $blanco;
+        flex-direction: row;
+        flex-wrap: wrap;
+
+        .encabezadoIndex {
+            width: 500px;
+        }
+
+        .logoIndex {
+            height: 200px;
+        }
+    }
+}
+
+.potesContenedor {
+    @include flexf (flex, space-around, inherit, inherit);
+    background-color: $azul;
+    width: 100%;
+    margin-top: 10px;
+
+    .potes {
+        @include flexf (flex, space-between, center, space-between);
+        text-align: center;
+        flex-wrap: wrap;
+        width: 50vw;
+    }
+
+    .potesSilueta {
+        @include flexf (flex, inherit, center, inherit);
+        width: 100px;
+        height: 100px;
+    }
+}
+
+.pelosContenedor {
+    @include flexf (flex, space-around, center, center);
+    background-color: $verde;
+    width: 100%;
+    flex-wrap: wrap;
+    flex-direction: row;
+
+    .pelos {
+        @include flexf (flex, space-between, center, space-between);
+        width: 50vw;
+        flex-wrap: wrap;
+
+        .potesSilueta {
+            @include flexf (flex, inherit, center, inherit);
+            width: 100px;
+            height: 100px;
+        }
+    }
+}
+
